@@ -1,0 +1,147 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+:root {
+  --green: #4caf50;
+  --gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  padding: 10px 22px;
+  background: var(--green);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+nav ul li {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: var(--green);
+}
+
+nav .logo img {
+  height: 48px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 72px);
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: var(--gray);
+  max-width: 520px;
+}
+
+.hero-btn {
+  margin-top: 28px;
+  display: flex;
+  gap: 18px;
+}
+
+.secondary-btn {
+  background: #fff;
+  border: 2px solid var(--gray);
+  color: var(--gray);
+}
+
+.shopping {
+  margin-top: 30px;
+}
+
+.shopping p {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.shopping-images {
+  display: flex;
+  gap: 18px;
+}
+
+.shopping-images img {
+  width: 70px;
+}
+
+.shopping brand-icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  .hero-btn {
+    justify-content: center;
+  }
+}
